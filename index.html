@@ -11,125 +11,34 @@
         })();
     </script>
     <title>Form Pendaftaran Travel</title>
-</head>
-<body>
-    <div class="formbold-main-wrapper">
-        <div class="formbold-form-wrapper">
-            <img src="img/icon.png" alt="icon">
-            <form id="travel-form">
-                <div class="formbold-input-wrapp formbold-mb-3">
-                    <label for="firstname" class="formbold-form-label">Nama</label>
-                    <div>
-                        <input type="text" name="firstname" id="firstname" placeholder="First name" class="formbold-form-input" />
-                        <input type="text" name="lastname" id="lastname" placeholder="Last name" class="formbold-form-input" />
-                    </div>
-                </div>
-                <div class="formbold-mb-3">
-                    <label for="age" class="formbold-form-label">Umur</label>
-                    <input type="text" name="age" id="age" placeholder="ex:25" class="formbold-form-input" />
-                </div>
-                <div class="formbold-mb-3">
-                    <label for="dob" class="formbold-form-label">Tanggal Daftar</label>
-                    <input type="date" name="dob" id="dob" class="formbold-form-input" />
-                </div>
-                <div class="formbold-mb-3">
-                    <label class="formbold-form-label">Gender</label>
-                    <select class="formbold-form-input" name="gender" id="gender">
-                        <option value="male">Laki-Laki</option>
-                        <option value="female">Perempuan</option>
-                        <option value="others">Lainya</option>
-                    </select>
-                </div>
-                <div class="formbold-mb-3">
-                    <label for="email" class="formbold-form-label">Email</label>
-                    <input type="email" name="email" id="email" placeholder="example@email.com" class="formbold-form-input" />
-                </div>
-                <div class="formbold-mb-3">
-                    <label for="address" class="formbold-form-label">Nama LPK</label>
-                    <input type="text" name="address" id="address" placeholder="ex: LPK OS Selna Jaya, IM JAPAN 341" class="formbold-form-input formbold-mb-3" />
-                    <label for="address2" class="formbold-form-label">Nama Kaisha</label>
-                    <input type="text" name="address2" id="address2" placeholder="ex: Mitsubishi UFJ Financial Group" class="formbold-form-input" />
-                </div>
-                <div class="formbold-mb-3 formbold-input-wrapp">
-                    <label for="phone" class="formbold-form-label">Phone</label>
-                    <div>
-                        <select class="formbold-form-input" name="phone_code" id="phone_code">
-                            <option value="IND 62">+62</option>
-                            <option value="JPN 81">+81</option>
-                            <option value="others">Lainya</option>
-                        </select>
-                        <input type="text" name="phone" id="phone" placeholder="Phone number" class="formbold-form-input" />
-                    </div>
-                </div>
-                <div class="formbold-input-flex">
-                    <div>
-                        <label for="post" class="formbold-form-label">Jumlah Koper</label>
-                        <input type="text" name="post" id="post" placeholder="ex: 2 Koper Besar" class="formbold-form-input" />
-                    </div>
-                    <div>
-                        <label for="city" class="formbold-form-label">Tujuan Kota</label>
-                        <input type="text" name="city" id="city" placeholder="ex: Yogyakarta" class="formbold-form-input" />
-                    </div>
-                </div>
-                <div class="formbold-mb-3">
-                    <label for="upload" class="formbold-form-label">Upload Tiket Pesawat Jepang ke Indonesia</label>
-                    <input type="file" name="upload" id="upload" class="formbold-form-input formbold-form-file" />
-                </div>
-                <div class="formbold-checkbox-wrapper">
-                    <label for="supportCheckbox" class="formbold-checkbox-label">
-                        <div class="formbold-relative">
-                            <input type="checkbox" id="supportCheckbox" class="formbold-input-checkbox" />
-                            <div class="formbold-checkbox-inner">
-                                <span class="formbold-opacity-0">
-                                    <svg width="11" height="8" viewBox="0 0 11 8" class="formbold-stroke-current" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.81868 0.688604L4.16688 5.4878L2.05598 3.29507C1.70417 2.92271 1.1569 2.96409 0.805082 3.29507C0.453266 3.66742 0.492357 4.24663 0.805082 4.61898L3.30689 7.18407C3.54143 7.43231 3.85416 7.55642 4.16688 7.47485C4.47961 7.55642 4.83376 7.43231 5.0683 7.18407L10.1949 1.61697C10.5067 1.24462 10.5458 0.665413 10.1949 0.293059C9.84311 -0.0782936 9.29583 -0.119673 8.94302 0.293059H8.81868Z" fill="white"></path>
-                                    </svg>
-                                </span>
-                            </div>
-                        </div>
-                        Saya setuju dengan syarat dan ketentuan.
-                    </label>
-                </div>
-                <button class="formbold-btn">Daftar</button>
-            </form>
-        </div>
-    </div>
     <style>
         body {
             font-family: 'Inter', sans-serif;
-        }
-        .formbold-mb-3 {
-            margin-bottom: 15px;
-        }
-        .formbold-relative {
-            position: relative;
-        }
-        .formbold-opacity-0 {
-            opacity: 0;
-        }
-        .formbold-stroke-current {
-            stroke: currentColor;
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
         .formbold-main-wrapper {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 48px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .formbold-form-wrapper {
             margin: 0 auto;
             max-width: 570px;
             width: 100%;
-            background: white;
             padding: 40px;
-            border-radius: 6px;
-            border: 1px solid #dde3ec;
         }
-        .formbold-input-wrapp > div {
-            display: flex;
-            gap: 20px;
-        }
-        .formbold-form-input {
+        .formbold-form-input,
+        .formbold-form-select,
+        .formbold-form-file {
             width: 100%;
             padding: 13px 22px;
             border-radius: 5px;
@@ -140,16 +49,11 @@
             color: #536387;
             outline: none;
             resize: none;
+            margin-bottom: 15px;
         }
-        .formbold-form-input::placeholder,
-        select.formbold-form-input,
-        .formbold-form-input[type='date']::-webkit-datetime-edit-text,
-        .formbold-form-input[type='date']::-webkit-datetime-edit-month-field,
-        .formbold-form-input[type='date']::-webkit-datetime-edit-day-field,
-        .formbold-form-input[type='date']::-webkit-datetime-edit-year-field {
-            color: rgba(83, 99, 135, 0.5);
-        }
-        .formbold-form-input:focus {
+        .formbold-form-input:focus,
+        .formbold-form-select:focus,
+        .formbold-form-file:focus {
             border-color: #ffa600;
             box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
         }
@@ -158,30 +62,31 @@
             font-size: 14px;
             line-height: 24px;
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
-        .formbold-checkbox-label {
-            display: flex;
-            cursor: pointer;
-            user-select: none;
+        .formbold-btn {
             font-size: 16px;
-            line-height: 24px;
-            color: #536387;
+            border-radius: 5px;
+            padding: 14px 25px;
+            border: none;
+            font-weight: 500;
+            background-color: #ffa600;
+            color: white;
+            cursor: pointer;
+            margin-top: 25px;
+            width: 100%;
         }
-        .formbold-checkbox-label a {
-            margin-left: 5px;
-            color: #ffa600;
+        .formbold-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
         }
-        .formbold-input-checkbox {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
+        .formbold-btn:hover {
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+        .formbold-checkbox-wrapper {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
         }
         .formbold-checkbox-inner {
             display: flex;
@@ -194,105 +99,128 @@
             border: 0.7px solid #dde3ec;
             border-radius: 3px;
         }
-        .formbold-form-file {
-            padding: 12px;
-            font-size: 14px;
-            line-height: 24px;
-            color: rgba(83, 99, 135, 0.5);
-        }
-        .formbold-form-file::-webkit-file-upload-button {
-            display: none;
-        }
-        .formbold-form-file:before {
-            content: 'Upload';
-            display: inline-block;
-            background: #EEEEEE;
-            border: 0.5px solid #E7E7E7;
-            border-radius: 3px;
-            padding: 3px 12px;
-            outline: none;
+        .formbold-input-checkbox {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
             white-space: nowrap;
-            -webkit-user-select: none;
-            cursor: pointer;
-            color: #637381;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 16px;
-            margin-right: 10px;
+            border-width: 0;
         }
-        .formbold-btn {
-            font-size: 16px;
-            border-radius: 5px;
-            padding: 14px 25px;
-            border: none;
-            font-weight: 500;
-            background-color: #ffa600;
-            color: white;
-            cursor: pointer;
-            margin-top: 25px;
+        .formbold-opacity-0 {
+            opacity: 0;
         }
-        .formbold-btn:hover {
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+        .formbold-stroke-current {
+            stroke: currentColor;
         }
-        .formbold-w-45 {
-            width: 45%;
-        }
-        .formbold-checkbox-wrapper {
-    margin-bottom: 15px;
-}
-
-.formbold-checkbox-label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    font-size: 16px;
-    line-height: 24px;
-    color: #536387;
-}
-
-.formbold-input-checkbox {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.formbold-checkbox-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    margin-right: 16px;
-    margin-top: 2px;
-    border: 0.7px solid #dde3ec;
-    border-radius: 3px;
-    background-color: white;
-    transition: background-color 0.2s ease;
-}
-
-.formbold-input-checkbox:checked + .formbold-checkbox-inner {
-    background-color: #ffa600;
-}
-
-.formbold-opacity-0 {
-    opacity: 0;
-}
-
-.formbold-input-checkbox:checked + .formbold-checkbox-inner .formbold-opacity-0 {
-    opacity: 1;
-}
     </style>
-    <script type="text/javascript">
-        document.getElementById('travel-form').addEventListener('daftar', function(event) {
+</head>
+<body>
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <img src="img/icon.png" alt="icon" style="display: block; margin: 0 auto 20px;">
+            <form id="travel-form">
+                <div>
+                    <label for="firstname" class="formbold-form-label">Nama Depan</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Nama Depan" class="formbold-form-input" required />
+                </div>
+                <div>
+                    <label for="lastname" class="formbold-form-label">Nama Belakang</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Nama Belakang" class="formbold-form-input" required />
+                </div>
+                <div>
+                    <label for="age" class="formbold-form-label">Umur</label>
+                    <input type="number" name="age" id="age" placeholder="ex: 25" class="formbold-form-input" min="1" max="120" required />
+                </div>
+                <div>
+                    <label for="dob" class="formbold-form-label">Tanggal Daftar</label>
+                    <input type="date" name="dob" id="dob" class="formbold-form-input" required />
+                </div>
+                <div>
+                    <label for="gender" class="formbold-form-label">Gender</label>
+                    <select name="gender" id="gender" class="formbold-form-input" required>
+                        <option value="male">Laki-Laki</option>
+                        <option value="female">Perempuan</option>
+                        <option value="others">Lainya</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email" class="formbold-form-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@email.com" class="formbold-form-input" required />
+                </div>
+                <div>
+                    <label for="address" class="formbold-form-label">Nama LPK</label>
+                    <input type="text" name="address" id="address" placeholder="ex: LPK OS Selna Jaya, IM JAPAN 341" class="formbold-form-input" required />
+                </div>
+                <div>
+                    <label for="address2" class="formbold-form-label">Nama Kaisha</label>
+                    <input type="text" name="address2" id="address2" placeholder="ex: Mitsubishi UFJ Financial Group" class="formbold-form-input" required />
+                </div>
+                <div>
+                    <label for="phone" class="formbold-form-label">Phone</label>
+                    <div style="display: flex; gap: 10px;">
+                        <select name="phone_code" id="phone_code" class="formbold-form-input" style="width: 80px;" required>
+                            <option value="IND 62">+62</option>
+                            <option value="JPN 81">+81</option>
+                            <option value="others">Lainya</option>
+                        </select>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone number" class="formbold-form-input" required />
+                    </div>
+                </div>
+                <div>
+                    <label for="post" class="formbold-form-label">Jumlah Koper</label>
+                    <input type="number" name="post" id="post" placeholder="ex: 2 Koper Besar" class="formbold-form-input" min="0" required />
+                </div>
+                <div>
+                    <label for="city" class="formbold-form-label">Tujuan Kota</label>
+                    <input type="text" name="city" id="city" placeholder="ex: Yogyakarta" class="formbold-form-input" required />
+                </div>
+                <div>
+                    <label for="upload" class="formbold-form-label">Upload Tiket Pesawat Jepang ke Indonesia</label>
+                    <input type="file" name="upload" id="upload" class="formbold-form-input formbold-form-file" required />
+                </div>
+                <div class="formbold-checkbox-wrapper">
+                    <label for="supportCheckbox" class="formbold-checkbox-label">
+                        <input type="checkbox" id="supportCheckbox" class="formbold-input-checkbox" required />
+                        <div class="formbold-checkbox-inner">
+                            <span class="formbold-opacity-0">
+                                <svg width="11" height="8" viewBox="0 0 11 8" class="formbold-stroke-current">
+                                    <path d="M1.5 4.5L4.5 7.5L9.5 1.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <span>Setuju Dengan Ketentuan dan Layanan</span>
+                    </label>
+                </div>
+                <button type="submit" id="submitBtn" class="formbold-btn">Kirim</button>
+                <div id="status" style="margin-top: 20px;"></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('travel-form');
+        const submitBtn = document.getElementById('submitBtn');
+        const statusDiv = document.getElementById('status');
+
+        form.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            emailjs.sendForm('service_0ezt3wi', 'template_cqjkun6', this)
-                .then(function() {
-                    alert('SUCCESS!');
+            submitBtn.disabled = true;
+            statusDiv.textContent = "Mengirim...";
+
+            emailjs.sendForm('service_iq98gnk', 'template_ffjjsl6', form)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    statusDiv.textContent = "Formulir berhasil dikirim!";
+                    form.reset();
+                    submitBtn.disabled = false;
                 }, function(error) {
-                    alert('FAILED...', error);
+                    console.log('FAILED...', error);
+                    statusDiv.textContent = "Gagal mengirim formulir. Silakan coba lagi.";
+                    submitBtn.disabled = false;
                 });
         });
     </script>
