@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript">
-        (function(){
-            emailjs.init("Y285hzBBa_Wvy7RLrL");
+        (function() {
+            emailjs.init("Y285hzBBa_Wvy7RLrL");  // Ensure this is your actual EmailJS user ID
         })();
     </script>
     <title>Form Pendaftaran Travel</title>
@@ -98,17 +98,20 @@
             margin-top: 2px;
             border: 0.7px solid #dde3ec;
             border-radius: 3px;
+            position: relative;
         }
         .formbold-input-checkbox {
             position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
+            opacity: 0;
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+        }
+        .formbold-checkbox-inner svg {
+            display: none;
+        }
+        .formbold-input-checkbox:checked + .formbold-checkbox-inner svg {
+            display: block;
         }
         .formbold-opacity-0 {
             opacity: 0;
@@ -183,14 +186,12 @@
                     <input type="file" name="upload" id="upload" class="formbold-form-input formbold-form-file" required />
                 </div>
                 <div class="formbold-checkbox-wrapper">
-                    <label for="supportCheckbox" class="formbold-checkbox-label">
+                    <label class="formbold-checkbox-label">
                         <input type="checkbox" id="supportCheckbox" class="formbold-input-checkbox" required />
                         <div class="formbold-checkbox-inner">
-                            <span class="formbold-opacity-0">
-                                <svg width="11" height="8" viewBox="0 0 11 8" class="formbold-stroke-current">
-                                    <path d="M1.5 4.5L4.5 7.5L9.5 1.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                            </span>
+                            <svg width="11" height="8" viewBox="0 0 11 8" class="formbold-stroke-current">
+                                <path d="M1.5 4.5L4.5 7.5L9.5 1.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
                         </div>
                         <span>Setuju Dengan Ketentuan dan Layanan</span>
                     </label>
@@ -218,7 +219,7 @@
                     form.reset();
                     submitBtn.disabled = false;
                 }, function(error) {
-                    console.log('FAILED...', error);
+                    console.error('FAILED...', error);
                     statusDiv.textContent = "Gagal mengirim formulir. Silakan coba lagi.";
                     submitBtn.disabled = false;
                 });
