@@ -7,7 +7,7 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("Y285hzBBa_Wvy7RLrL");  // Ensure this is your actual EmailJS user ID
+            emailjs.init("Y285hzBBa_Wvy7RLrL");  // Pastikan ini adalah EmailJS user ID Anda
         })();
     </script>
     <title>Form Pendaftaran Travel</title>
@@ -165,7 +165,7 @@
                 <div>
                     <label for="phone" class="formbold-form-label">Phone</label>
                     <div style="display: flex; gap: 10px;">
-                        <select name="phone_code" id="phone_code" class="formbold-form-input" style="width: 80px;" required>
+                        <select name="phone_code" id="phone_code" class="formbold-form-input" style="width: 100px;" required>
                             <option value="IND 62">+62</option>
                             <option value="JPN 81">+81</option>
                             <option value="others">Lainya</option>
@@ -185,19 +185,10 @@
                     <label for="upload" class="formbold-form-label">Upload Tiket Pesawat Jepang ke Indonesia</label>
                     <input type="file" name="upload" id="upload" class="formbold-form-input formbold-form-file" required />
                 </div>
-                <div class="formbold-checkbox-wrapper">
-                    <label class="formbold-checkbox-label">
-                        <input type="checkbox" id="supportCheckbox" class="formbold-input-checkbox" required />
-                        <div class="formbold-checkbox-inner">
-                            <svg width="11" height="8" viewBox="0 0 11 8" class="formbold-stroke-current">
-                                <path d="M1.5 4.5L4.5 7.5L9.5 1.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
-                        <span>Setuju Dengan Ketentuan dan Layanan</span>
-                    </label>
+                <div>
+                    <button id="submitBtn" class="formbold-btn">Kirim</button>
                 </div>
-                <button type="submit" id="submitBtn" class="formbold-btn">Kirim</button>
-                <div id="status" style="margin-top: 20px;"></div>
+                <div id="status"></div>
             </form>
         </div>
     </div>
