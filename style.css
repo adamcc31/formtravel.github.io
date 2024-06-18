@@ -1,0 +1,44 @@
+.formbold-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Optional: ensure the wrapper spans the full width of the container */
+}
+
+img {
+  max-width: 100%; /* Optional: ensures the image scales responsively */
+}
+
+.formbold-input-wrapp {
+  margin-bottom: 15px; /* Adjust as necessary */
+}
+
+.formbold-form-label {
+  display: block;
+  margin-bottom: 5px; /* Adjust as necessary */
+}
+
+input[type="text"] {
+  width: 100%; /* Adjust as necessary for your design */
+  padding: 10px; /* Adjust as necessary */
+  border: 1px solid #ccc; /* Adjust as necessary */
+  border-radius: 4px; /* Adjust as necessary */
+}
+
+button {
+  padding: 10px 20px; /* Adjust as necessary */
+  background-color: #4CAF50; /* Adjust as necessary */
+  color: white; /* Adjust as necessary */
+  border: none; /* Adjust as necessary */
+  border-radius: 4px; /* Adjust as necessary */
+  cursor: pointer; /* Optional: for better UX */
+}
+
+button:hover {
+  background-color: #45a049; /* Adjust as necessary */
+}
