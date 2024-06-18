@@ -7,7 +7,7 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("Y285hzBBa_Wvy7RLrL");  // Pastikan ini adalah EmailJS user ID Anda
+            emailjs.init("285hzBBa_Wvy7RLrL");  // Pastikan ini adalah EmailJS user ID Anda
         })();
     </script>
     <title>Form Pendaftaran Travel</title>
@@ -203,7 +203,7 @@
             submitBtn.disabled = true;
             statusDiv.textContent = "Mengirim...";
 
-            emailjs.sendForm('service_iq98gnk', 'template_ffjjsl6', form)
+            emailjs.sendForm('service_0ezt3wi', 'template_cqjkun6', form)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     statusDiv.textContent = "Formulir berhasil dikirim!";
