@@ -183,7 +183,7 @@
                 </div>
                 <div>
                     <label for="upload" class="formbold-form-label">Upload Tiket Pesawat Jepang ke Indonesia</label>
-                    <input type="file" name="upload" id="upload" class="formbold-form-input formbold-form-file" required />
+                    <input type="file" name="upload" id="upload" class="formbold-form-input formbold-form-file" />
                 </div>
                 <div>
                     <button id="submitBtn" class="formbold-btn">Kirim</button>
@@ -206,7 +206,7 @@
          emailjs.sendForm('service_0ezt3wi', 'template_cqjkun6', form)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            statusDiv.textContent = "Formulir berhasil dikirim!";
+            statusDiv.textContent = "Formulir berhasil dikirim! Terimakasih telah memilih kami!";
             form.reset();
             submitBtn.disabled = false;
         }, function(error) {
