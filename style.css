@@ -1,26 +1,63 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  background-color: #ffa600;
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  padding: 120px 0; /* Sesuaikan padding agar tidak melebihi batas atas */
+  margin-bottom: 20px; /* Tambahkan margin bawah untuk memberi ruang antara header dan konten utama */
+}
+
+.header-content {
+  padding: 20px 0;
+}
+
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffa600; /* Tambahkan frame di sekitar konten */
+  margin-top: 20px; /* Sesuaikan margin top jika perlu */
+}
+
 .formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 570px;
+  width: 100%;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-header {
-    width: 100%;
-    background-color: #ffa600;
-    color: white;
-    padding: 220px 0;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .image-wrapper {
   display: flex;
   justify-content: center;
-  width: 100%; /* Optional: ensure the wrapper spans the full width of the container */
+  width: 10%; /* Optional: ensure the wrapper spans the full width of the container */
 }
 
 img {
   max-width: 100%; /* Optional: ensures the image scales responsively */
+  display: block;
+  margin: 0 auto 20px; /* Sesuaikan margin bottom untuk memberi ruang antara gambar dan konten di bawahnya */
+  max-width: 300px; /* Sesuaikan ukuran maksimum gambar */
+  height: auto;
 }
 
 .formbold-input-wrapp {
@@ -32,11 +69,17 @@ img {
   margin-bottom: 5px; /* Adjust as necessary */
 }
 
-input[type="text"] {
+input[type="text"], 
+input[type="number"], 
+input[type="date"], 
+input[type="email"], 
+input[type="tel"], 
+select {
   width: 100%; /* Adjust as necessary for your design */
   padding: 10px; /* Adjust as necessary */
   border: 1px solid #ccc; /* Adjust as necessary */
   border-radius: 4px; /* Adjust as necessary */
+  margin-bottom: 15px;
 }
 
 button {
@@ -46,6 +89,8 @@ button {
   border: none; /* Adjust as necessary */
   border-radius: 4px; /* Adjust as necessary */
   cursor: pointer; /* Optional: for better UX */
+  margin-top: 25px;
+  width: 100%;
 }
 
 button:hover {
