@@ -7,194 +7,78 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("285hzBBa_Wvy7RLrL");  // Pastikan ini adalah EmailJS user ID Anda
+            emailjs.init("285hzBBa_Wvy7RLrL"); 
         })();
     </script>
     <title>Form Pendaftaran Travel</title>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f5f7fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        header {
-            width: 100%;
-            background-color: #ffa600;
-            color: white;
-            padding: 220px 0;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .formbold-main-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 48px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .formbold-form-wrapper {
-            margin: 0 auto;
-            max-width: 570px;
-            width: 100%;
-            padding: 40px;
-        }
-        .formbold-form-input,
-        .formbold-form-select,
-        .formbold-form-file {
-            width: 100%;
-            padding: 13px 22px;
-            border-radius: 5px;
-            border: 1px solid #dde3ec;
-            background: white;
-            font-weight: 500;
-            font-size: 16px;
-            color: #536387;
-            outline: none;
-            resize: none;
-            margin-bottom: 15px;
-        }
-        .formbold-form-input:focus,
-        .formbold-form-select:focus,
-        .formbold-form-file:focus {
-            border-color: #ffa600;
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-        }
-        .formbold-form-label {
-            color: #536387;
-            font-size: 14px;
-            line-height: 24px;
-            display: block;
-            margin-bottom: 5px;
-        }
-        .formbold-btn {
-            font-size: 16px;
-            border-radius: 5px;
-            padding: 14px 25px;
-            border: none;
-            font-weight: 500;
-            background-color: #ffa600;
-            color: white;
-            cursor: pointer;
-            margin-top: 25px;
-            width: 100%;
-        }
-        .formbold-btn:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-        }
-        .formbold-btn:hover {
-            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
-        }
-        .formbold-checkbox-wrapper {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        .formbold-checkbox-inner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 20px;
-            height: 20px;
-            margin-right: 16px;
-            margin-top: 2px;
-            border: 0.7px solid #dde3ec;
-            border-radius: 3px;
-            position: relative;
-        }
-        .formbold-input-checkbox {
-            position: absolute;
-            opacity: 0;
-            cursor: pointer;
-            height: 100%;
-            width: 100%;
-        }
-        .formbold-checkbox-inner svg {
-            display: none;
-        }
-        .formbold-input-checkbox:checked + .formbold-checkbox-inner svg {
-            display: block;
-        }
-        .formbold-opacity-0 {
-            opacity: 0;
-        }
-        .formbold-stroke-current {
-            stroke: currentColor;
-        }
-    </style>
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            Form Pendaftaran Travel
+        </div>
+    </header>
     <div class="formbold-main-wrapper">
         <div class="formbold-form-wrapper">
-            <img src="img/icon.png" alt="icon" style="display: block; margin: 0 auto 20px;">
+            <img src="img/icon.png" alt="icon" class="centered-image">
             <form id="travel-form">
-                <div>
+                <!-- Form fields -->
+                <div class="formbold-input-wrapp">
                     <label for="firstname" class="formbold-form-label">Nama Depan</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Nama Depan" class="formbold-form-input" required />
+                    <input type="text" name="firstname" id="firstname" placeholder="Nama Depan" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="lastname" class="formbold-form-label">Nama Belakang</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Nama Belakang" class="formbold-form-input" required />
+                    <input type="text" name="lastname" id="lastname" placeholder="Nama Belakang" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="age" class="formbold-form-label">Umur</label>
-                    <input type="number" name="age" id="age" placeholder="ex: 25" class="formbold-form-input" min="1" max="120" required />
+                    <input type="number" name="age" id="age" placeholder="ex: 25" min="1" max="120" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="dob" class="formbold-form-label">Tanggal Daftar</label>
-                    <input type="date" name="dob" id="dob" class="formbold-form-input" required />
+                    <input type="date" name="dob" id="dob" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="gender" class="formbold-form-label">Gender</label>
-                    <select name="gender" id="gender" class="formbold-form-input" required>
+                    <select name="gender" id="gender" required>
                         <option value="male">Laki-Laki</option>
                         <option value="female">Perempuan</option>
-                        <option value="others">Lainya</option>
+                        <option value="others">Lainnya</option>
                     </select>
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="email" class="formbold-form-label">Email</label>
-                    <input type="email" name="email" id="email" placeholder="example@email.com" class="formbold-form-input" required />
+                    <input type="email" name="email" id="email" placeholder="example@email.com" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="address" class="formbold-form-label">Nama LPK</label>
-                    <input type="text" name="address" id="address" placeholder="ex: LPK OS Selna Jaya, IM JAPAN 341" class="formbold-form-input" required />
+                    <input type="text" name="address" id="address" placeholder="ex: LPK OS Selna Jaya, IM JAPAN 341" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="address2" class="formbold-form-label">Nama Kaisha</label>
-                    <input type="text" name="address2" id="address2" placeholder="ex: Mitsubishi UFJ Financial Group" class="formbold-form-input" required />
+                    <input type="text" name="address2" id="address2" placeholder="ex: Mitsubishi UFJ Financial Group" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="phone" class="formbold-form-label">Phone</label>
                     <div style="display: flex; gap: 10px;">
-                        <select name="phone_code" id="phone_code" class="formbold-form-input" style="width: 100px;" required>
-                            <option value="IND 62">+62</option>
-                            <option value="JPN 81">+81</option>
-                            <option value="others">Lainya</option>
+                        <select name="phone_code" id="phone_code" style="width: 100px;" required>
+                            <option value="+62">+62</option>
+                            <option value="+81">+81</option>
+                            <option value="others">Lainnya</option>
                         </select>
-                        <input type="tel" name="phone" id="phone" placeholder="Phone number" class="formbold-form-input" required />
+                        <input type="tel" name="phone" id="phone" placeholder="Phone number" required />
                     </div>
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="post" class="formbold-form-label">Jumlah Koper</label>
-                    <input type="number" name="post" id="post" placeholder="ex: 2 Koper Besar" class="formbold-form-input" min="0" required />
+                    <input type="number" name="post" id="post" placeholder="ex: 2" min="0" max="4" required />
                 </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <label for="city" class="formbold-form-label">Tujuan Kota</label>
-                    <input type="text" name="city" id="city" placeholder="ex: Yogyakarta" class="formbold-form-input" required />
+                    <input type="text" name="city" id="city" placeholder="ex: Yogyakarta" required />
                 </div>
-                <div>
-                    <label for="upload" class="formbold-form-label">Upload Tiket Pesawat Jepang ke Indonesia</label>
-                    <input type="file" name="upload" id="upload" class="formbold-form-input formbold-form-file" />
-                </div>
-                <div>
+                <div class="formbold-input-wrapp">
                     <button id="submitBtn" class="formbold-btn">Kirim</button>
                 </div>
                 <div id="status"></div>
